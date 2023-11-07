@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    color: #242424;
+}
+
+header {
+    background-color: #242424;
+    width: 100%;
+}
+
+.mobile {
+    position: relative;
+}
+
+.menu_logo {
+    border: 1px solid rgba(0, 0, 5, 0.80);
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+    align-items: center;
+    padding-inline: 1rem;
+    /* margin-bottom: 1rem; */
+    background: rgba(0, 0, 5, 0.80);
+    border-radius: 0px 10px 10px 0px ;
+}
+
+.options {
+    background: rgba(0, 0, 5, 0.80);
+    width: 10rem;
+    height: 17rem; 
+    padding-block: 5rem;
+    translate: -100%;
+    position: absolute;
+    top: 4.5625rem;
+    transition: translate .3s;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 0px 10px 10px 0px ;
+}
+
+.options nav {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    margin-top: -3.8rem;
+}
+
+.options.open {
+    translate: 0;
+    z-index:1;
+}
+
+.desktop {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    background: rgba(0, 0, 5, 0.80);
+    padding-inline: 20px;
+    padding: 10px;
+}
+
+.desktop_options {
+    display: flex;
+    gap: 2rem;
+}
+
+section.module_content p{
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+section.module_content{
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    height: 60rem;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+}
+
+section.module_content:last-child{
+    margin-bottom: 0;
+}
+
+section.module_content h2{
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+section.module_content.container{
+    padding: 40px 0;
+}
+
+.module_content .container h2{
+    margin-top: 30px;
+    margin-bottom: 40px;
+    font-size: 40px;
+    color: #ffffff;
+    text-align: center;
+    justify-content: center;
+}
+
+.module_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* height: 100vh !important; */
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+img {
+    width: 5.7vw;
+}
+
+.imagens {
+    gap: 40px;
+    display: flex;
+    margin-inline: auto;
+}
+
+.motorista img {
+    width: 400px;
+    border-radius: 20px;
+}
+
+.estudante img {
+    width: 450px;
+    border-radius: 20px;
+}
+
+header .botao{
+    background-color: rgba(0, 0, 5, 0.80);
+    color: #fff;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;  
+    width: 94px;
+}
+
+@media (min-width: 800px) {
+
+    header {
+        height: auto;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: flex;
+    }
+
+    .imagens {
+        gap: 40px;
+        display: flex;
+        margin-inline: auto;
+    }
+
+    .container h2 {
+        margin-top: 5rem;
+        margin-inline: 10px;
+    }
+
+    .container p {
+        margin-inline: 20px;
+    }
+}
+
+@media (max-width: 800px) {
+
+    header {
+        height: auto;
+    }
+    .imagens {
+        gap: 40px;
+        display: block;
+        margin-inline: auto;
+        margin-bottom: 20px;
+    }
+    .imagens img {
+        width: 250px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .container h2 {
+        margin-top: 5rem;
+        margin-inline: 10px;
+    }
+
+    .container p {
+        margin-inline: 20px;
+    }
+}
+@media (max-width: 550px){
+    .container h2{
+        font-size: 30px;
+    }
+    .module_content .imagens img {
+        width: 250px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+}
+
+@media (max-width: 910px) {
+    .imagens img {
+        width: 350px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+}

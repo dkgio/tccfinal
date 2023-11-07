@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    color: #242424;
+}
+
+.desktop {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    background: rgba(0, 0, 5, 0.80);
+    padding-inline: 20px;
+    padding: 10px;
+}
+
+.mobile {
+    position: relative;
+}
+
+.desktop_options {
+    display: flex;
+    gap: 2rem;
+}
+
+.menu_logo {
+    border: 1px solid rgba(0, 0, 5, 0.80);
+    display: flex;
+    justify-content: space-between;
+    height: 5rem;
+    align-items: center;
+    padding-inline: 1rem;
+    margin-bottom: -1rem;
+    background: rgba(0, 0, 5, 0.80);
+    border-radius: 0px 10px 10px 0px ;
+}
+
+.options {
+    background: rgba(0, 0, 5, 0.80);
+    width: 10rem;
+    height: 16rem;
+    padding-block: 5rem;
+    translate: -100%;
+    position: absolute;
+    top: 5rem;
+    transition: translate .3s;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 0px 10px 10px 0px ;
+}
+
+.options nav {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    margin-top: -4rem;
+}
+
+img {
+    width: 80px;
+}
+
+.options.open {
+    translate: 0;
+}
+
+
+section.parallax_two{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* height: 100vh !important; */
+    height: 80rem;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+}
+
+section.parallax_two h1{
+    margin-top: 30px;
+    margin-bottom: 40px;
+    font-size: 40px;
+    color: #ffffff;
+    text-align: center;
+    justify-content: center;
+}
+section.parallax_two p{
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+
+.imagenscomponentes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.imagenscomponentes p {
+    text-align: center;
+}
+
+
+.oculosprotecao img {
+    width: 150px;
+    border-radius: 20px;
+}
+
+.conteudocompotente {
+    font-size: small;
+}
+
+.arduino img {
+    width: 150px;
+    border-radius: 20px;
+}
+
+
+.sensor img {
+    width: 150px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.botao img {
+    width: 150px;
+    border-radius: 20px;
+}
+
+.buzzer img {
+    width: 150px;
+    border-radius: 20px;
+}
+
+.bateria img {
+    width: 150px;
+    border-radius: 20px;
+}
+
+
+
+
+.parallax_two h1 {
+    margin-top: 5rem;
+    margin-bottom: 40px;
+}
+
+.imagenscomponentes{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  
+}
+
+.imagenscomponentes {
+    width: 506px;
+    height: 768px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+
+
+.imagenscomponentes img{
+    margin-inline: 50px;
+}
+
+header .botao{
+    background-color: rgba(0, 0, 5, 0.80);
+    color: #fff;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;  
+    width: 94px;
+}
+@media (min-width: 800px) {
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: flex;
+    }
+    
+}
+
+
+@media (min-width: 800px) {
+
+    .imagenscomponentes{
+        display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    width: 700px;
+    }
+    
+  }
+  @media (max-width: 515px) {
+    .imagenscomponentes{
+      display: grid;
+      grid-template-rows: repeat(1, 1fr);
+      grid-template-columns: repeat(1, 1fr);
+      gap: 1rem;
+      width: auto;
+      text-align: center;
+    }
+
+    .imagenscomponentes p {
+        margin-inline: 10px;
+    }
+
+    
+section.parallax_two{
+
+    height: 125rem;
+}
+  }
